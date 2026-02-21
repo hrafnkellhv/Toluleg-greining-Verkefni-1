@@ -13,7 +13,7 @@ def nakvaem_lausn_cc_sin(x):
     f = f_kraftur()
     y_const = (f / (24 * E * I)) * x**2 * (x - L)**2
     y_sin = -(p * g / (E * I)) * (L**4 / np.pi**4) * np.sin(np.pi * x / L)
-    y_poly = (p * g / (E * I)) * ((-L / np.pi**3) * x**3 + (L**2 / np.pi**3) * x**2)
+    y_poly = (p * g / (E * I)) * ((-L / np.pi**3) * x**2 + (L**2 / np.pi**3) * x)
     return y_const + y_sin + y_poly
 
 
